@@ -1,4 +1,5 @@
  const express = require("express")
+ require("dotenv").config()
  const app = express()
  const Port = process.env.PORT || 5001
 
@@ -8,7 +9,7 @@
     })
  })
 
- // npx kill-port 5001 -y
+ 
  app.listen(Port,()=>{
     console.log(`Server: ${Port}`)
  });
